@@ -1,30 +1,60 @@
-# Turborepo starter
+# @trpc-adapters
 
-This is an official starter Turborepo.
+A monorepo holding [tRPC](https://trpc.io/) adapters for various platforms and frameworks.
+With tRPC adapters, you can have end-to-end type safety no matter where your API runs.
 
-## Using this example
+## Install
 
-Run the following command:
+Run the following command from the root directory:
 
-```sh
-npx create-turbo@latest
+```bash
+pnpm install
 ```
 
-## What's inside?
+## Packages
 
-This Turborepo includes the following packages/apps:
+This Turborepo includes the following packages:
 
-### Apps and Packages
+- [`trpc-firebase-functions`](./packages/firebase-functions/): a tRPC adapter for Firebase functions
+- [`trpc-google-cloud-functions`](./packages/google-cloud-functions/): a tRPC adapter for Google cloud functions
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@trpc-adapters/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@trpc-adapters/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@trpc-adapters/typescript-config`: `tsconfig.json`s used throughout the monorepo
+It also includes the following internal configuration packages:
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- [`@trpc-adapters/eslint-config`](./packages/eslint-config/): `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- [`@trpc-adapters/typescript-config`](./packages/typescript-config/): `tsconfig.json`s used throughout the monorepo
 
-### Utilities
+## CLI Commands
+
+The following commands will apply to all apps and packages if run from the root directory.
+Alternatively, commands run from individual project directories will only apply to that project.
+
+### Build
+
+```bash
+pnpm build
+```
+
+### Develop
+
+Start dev servers or file watchers that auto reload on file changes.
+
+```bash
+pnpm dev
+```
+
+### Lint
+
+```bash
+pnpm lint
+```
+
+### Format
+
+```bash
+pnpm format
+```
+
+## Utilities
 
 This Turborepo has some additional tools already setup for you:
 
@@ -32,32 +62,13 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
 ### Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-```
-cd my-turborepo
+```bash
 npx turbo login
 ```
 
