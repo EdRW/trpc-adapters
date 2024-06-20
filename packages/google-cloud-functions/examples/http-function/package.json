@@ -1,0 +1,35 @@
+{
+  "name": "examples-http-function",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "functions-framework --target=helloWorld",
+    "deploy": "gcloud functions deploy helloWorld --runtime nodejs20 --trigger-http",
+    "prestart": "npm run build",
+    "gcp-build": "npm run build"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.0",
+    "@trpc/server": "^10.45.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@trpc-adapters/eslint-config": "workspace:*",
+    "trpc-google-cloud-functions": "workspace:*",
+    "@trpc-adapters/typescript-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0",
+    "zod": "^3.23.8"
+  },
+  "private": true
+}
