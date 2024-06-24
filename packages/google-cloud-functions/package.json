@@ -1,6 +1,6 @@
 {
   "name": "trpc-google-cloud-functions",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
