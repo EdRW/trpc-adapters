@@ -1,6 +1,6 @@
 {
   "name": "trpc-google-cloud-functions",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
@@ -10,6 +10,14 @@
   },
   "author": "Edmund Rosewright",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EdRW/trpc-adapters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EdRW/trpc-adapters/issues"
+  },
+  "homepage": "https://github.com/EdRW/trpc-adapters/tree/main/packages/google-cloud-functions",
   "keywords": [
     "trpc",
     "adapter",
