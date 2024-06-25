@@ -54,6 +54,12 @@ pnpm lint
 pnpm format
 ```
 
+### Test
+
+```bash
+pnpm test
+```
+
 ## Utilities
 
 This Turborepo has some additional tools already setup for you:
