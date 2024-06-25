@@ -1,9 +1,10 @@
 # trpc-firebase-functions
 
+**End-to-end type safety for your Firebase functions with tRPC.**
+
 ## Description
 
-End-to-end type safety for your firebase functions.
-This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a request handler for v1 and v2 HTTP `onRequest` firebase-functions.
+This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a request handler for v1 and v2 HTTP `onRequest` Firebase functions.
 
 This package has the following peer dependencies:
 
@@ -17,7 +18,7 @@ Features
 - 🚧 v1 Firebase functions support
 - 🚧 tRPC v11 support
 
-Special thanks to the folks in the [Integration with firebase functions? #1263](https://github.com/trpc/trpc/discussions/1263) discussion thread for working out how a firebase functions adapter could be built.
+Special thanks to the folks in the [Integration with firebase functions? #1263](https://github.com/trpc/trpc/discussions/1263) discussion thread for working out how a Firebase functions adapter could be built.
 
 ## Installation
 
@@ -65,7 +66,7 @@ export const helloWorld = onRequest(handler);
 
 Use the `CreateFirebaseContextOptions` type that comes in this package.
 While creating the context, you have access to the `request` and `response` objects.
-The context can be used to hold things that your procedures should have access to, like user authentication or the firestore client.
+The context can be used to hold things that your procedures should have access to, like user authentication or the Firestore client.
 
 ```typescript
 import type { CreateFirebaseContextOptions } from 'trpc-firebase-functions';
@@ -100,7 +101,7 @@ const appRouter = t.router({
 
 ### 3. Use the adapter
 
-This adapter is for HTTP (`onRequest`) firebase functions.
+This adapter is for HTTP (`onRequest`) Firebase functions.
 It converts your router into a request handler that can be passed directly to the `onRequest` function.
 
 ```typescript
