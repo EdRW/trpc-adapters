@@ -1,12 +1,14 @@
 {
   "name": "trpc-firebase-functions",
   "version": "0.1.0",
-  "description": "",
+  "description": "End-to-end type safety for your Firebase functions with tRPC.",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "pnpm build --watch",
-    "lint": "eslint --ext .js,.ts .",
-    "check-types": "tsc --noEmit"
+    "lint": "eslint --ext .js,.ts src",
+    "check-types": "tsc --noEmit",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "Edmund Rosewright",
   "license": "MIT",
@@ -39,10 +41,14 @@
   },
   "devDependencies": {
     "@trpc-adapters/eslint-config": "workspace:*",
+    "@trpc-adapters/jest-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
     "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.14.5",
     "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
     "tsup": "^8.1.0",
     "typescript": "^5.4.5"
   }

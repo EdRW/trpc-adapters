@@ -5,5 +5,4 @@ module.exports = {
   parserOptions: {
     project: true,
   },
-  ignorePatterns: ["examples/**"],
 };
