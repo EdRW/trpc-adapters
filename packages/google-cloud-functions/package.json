@@ -39,11 +39,11 @@
     }
   },
   "peerDependencies": {
-    "@google-cloud/functions-framework": "^3.4.0",
+    "@google-cloud/functions-framework": "^3.0.0",
     "@trpc/server": "^10.27.0"
   },
   "devDependencies": {
-    "@google-cloud/functions-framework": "^3.4.0",
+    "@google-cloud/functions-framework": "^3.0.0",
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/jest-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",

@@ -60,7 +60,7 @@ importers:
         specifier: ^10.27.0
         version: 10.45.2
       firebase-functions:
-        specifier: ^5.0.0
+        specifier: ^4.0.0 || ^5.0.0
         version: 5.0.1(firebase-admin@12.1.1)
     devDependencies:
       '@trpc-adapters/eslint-config':
@@ -195,7 +195,7 @@ importers:
   packages/google-cloud-functions:
     devDependencies:
       '@google-cloud/functions-framework':
-        specifier: ^3.4.0
+        specifier: ^3.0.0
         version: 3.4.0
       '@trpc-adapters/eslint-config':
         specifier: workspace:*
@@ -5665,7 +5665,7 @@ snapshots:
 
   '@types/cors@2.8.17':
     dependencies:
-      '@types/node': 20.14.5
+      '@types/node': 20.14.6
 
   '@types/eslint@8.56.10':
     dependencies:

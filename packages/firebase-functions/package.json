@@ -37,7 +37,7 @@
   },
   "peerDependencies": {
     "@trpc/server": "^10.27.0",
-    "firebase-functions": "^5.0.0"
+    "firebase-functions": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
     "@trpc-adapters/eslint-config": "workspace:*",
