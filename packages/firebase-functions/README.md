@@ -1,4 +1,4 @@
-# trpc-firebase-functions
+# trpc-firebase-functions 🔥
 
 **End-to-end type safety for your Firebase functions with tRPC.**
 
@@ -13,10 +13,10 @@ This package has the following peer dependencies:
 
 Features
 
-- ✅ v2 Firebase functions support
+- ✅ `onRequest` Firebase functions support
 - ✅ tRPC v10 support
-- 🚧 v1 Firebase functions support
 - 🚧 tRPC v11 support
+- 🤔 `onCall` Firebase functions support
 
 Special thanks to the folks in the [Integration with firebase functions? #1263](https://github.com/trpc/trpc/discussions/1263) discussion thread for working out how a Firebase functions adapter could be built.
 
@@ -105,8 +105,8 @@ This adapter is for HTTP (`onRequest`) Firebase functions.
 It converts your router into a request handler that can be passed directly to the `onRequest` function.
 
 ```typescript
-import { createFirebaseHandler } from 'trpc-firebase-functions';
 import { onRequest } from 'firebase-functions/v2/https';
+import { createFirebaseHandler } from 'trpc-firebase-functions';
 
 const handler = createFirebaseHandler({
   router: appRouter,
