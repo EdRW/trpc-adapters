@@ -1,6 +1,10 @@
 import { initTRPC } from '@trpc/server';
 import express from 'express';
-import { onRequest, type Request } from 'firebase-functions/v2/https';
+import { onRequest as onRequestV1 } from 'firebase-functions/v1/https';
+import {
+  onRequest as onRequestV2,
+  type Request,
+} from 'firebase-functions/v2/https';
 import request from 'supertest';
 import { createFirebaseHandler } from '..';
 
@@ -29,7 +33,7 @@ describe('createFirebaseHandler', () => {
   });
 });
 
-describe('firebase function', () => {
+describe('firebase onRequest function V1', () => {
   const handler = createFirebaseHandler({
     router,
   });
@@ -38,7 +42,36 @@ describe('firebase function', () => {
     const _req = req as Request;
     _req.rawBody = Buffer.from('');
 
-    const result = onRequest(handler)(_req, res);
+    const result = onRequestV1(handler)(_req, res);
+    if (result) {
+      result.catch((err) => {
+        res.status(500).send(err);
+        throw err;
+      });
+    }
+  });
+
+  it('can handle request', async () => {
+    const response = await request(app).get('/getUser');
+
+    expect(response.headers['content-type']).toMatch(/json/);
+    expect(response.status).toEqual(200);
+    expect(response.body).toMatchObject({
+      result: { data },
+    });
+  });
+});
+
+describe('firebase onRequest function V2', () => {
+  const handler = createFirebaseHandler({
+    router,
+  });
+  const app = express();
+  app.use((req, res) => {
+    const _req = req as Request;
+    _req.rawBody = Buffer.from('');
+
+    const result = onRequestV2(handler)(_req, res);
     if (result) {
       result.catch((err) => {
         res.status(500).send(err);
