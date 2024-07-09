@@ -1,5 +1,11 @@
 # trpc-firebase-functions
 
+## 1.0.0-next.0
+
+### Major Changes
+
+- 89d8213: Upgrade to tRPC v11 peer dependency and drop support for firebase-functions v4. Only firebase-functions v5 is supported now.
+
 ## 0.2.0
 
 ### Minor Changes
