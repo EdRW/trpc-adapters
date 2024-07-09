@@ -38,6 +38,13 @@
       "default": "./dist/index.js"
     }
   },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "package.json",
+    "!**/*.test.*"
+  ],
   "peerDependencies": {
     "@google-cloud/functions-framework": "^3.0.0",
     "@trpc/server": "^10.27.0"
