@@ -35,6 +35,13 @@
       "default": "./dist/index.js"
     }
   },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "package.json",
+    "!**/*.test.*"
+  ],
   "peerDependencies": {
     "@trpc/server": "11.0.0-rc.449",
     "firebase-functions": "^5.0.0"
