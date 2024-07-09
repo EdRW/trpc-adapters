@@ -55,13 +55,6 @@ importers:
         version: 5.5.3
 
   packages/firebase-functions:
-    dependencies:
-      '@trpc/server':
-        specifier: ^10.27.0
-        version: 10.45.2
-      firebase-functions:
-        specifier: ^4.0.0 || ^5.0.0
-        version: 5.0.1(firebase-admin@12.2.0)
     devDependencies:
       '@trpc-adapters/eslint-config':
         specifier: workspace:*
@@ -72,6 +65,9 @@ importers:
       '@trpc-adapters/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      '@trpc/server':
+        specifier: 11.0.0-rc.449
+        version: 11.0.0-rc.449
       '@types/express':
         specifier: ^4.17.21
         version: 4.17.21
@@ -87,6 +83,9 @@ importers:
       express:
         specifier: ^4.19.2
         version: 4.19.2
+      firebase-functions:
+        specifier: ^5.0.0
+        version: 5.0.1(firebase-admin@12.2.0)
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@20.14.10)
@@ -106,8 +105,8 @@ importers:
   packages/firebase-functions/examples/v2-https-function:
     dependencies:
       '@trpc/server':
-        specifier: ^10.45.2
-        version: 10.45.2
+        specifier: 11.0.0-rc.449
+        version: 11.0.0-rc.449
       firebase-functions:
         specifier: ^5.0.1
         version: 5.0.1(firebase-admin@12.2.0)
@@ -149,8 +148,8 @@ importers:
   packages/firebase-functions/examples/v2-https-function-auth:
     dependencies:
       '@trpc/server':
-        specifier: ^10.45.2
-        version: 10.45.2
+        specifier: 11.0.0-rc.449
+        version: 11.0.0-rc.449
       firebase-admin:
         specifier: ^12.2.0
         version: 12.2.0
@@ -1029,6 +1028,9 @@ packages:
 
   '@trpc/server@10.45.2':
     resolution: {integrity: sha512-wOrSThNNE4HUnuhJG6PfDRp4L2009KDVxsd+2VYH8ro6o/7/jwYZ8Uu5j+VaW+mOmc8EHerHzGcdbGNQSAUPgg==}
+
+  '@trpc/server@11.0.0-rc.449':
+    resolution: {integrity: sha512-xM/vQ042wA0FPAFhY18KcNJgiMMjdPk4mG3GXdHx4X9tpBuSlENUMZErEsuBrvbSpqbkIpalz5yY99/cPnHbCw==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -5075,6 +5077,8 @@ snapshots:
     optional: true
 
   '@trpc/server@10.45.2': {}
+
+  '@trpc/server@11.0.0-rc.449': {}
 
   '@types/babel__core@7.20.5':
     dependencies:
