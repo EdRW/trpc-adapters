@@ -12,6 +12,7 @@
     "trpc-google-cloud-functions": "0.2.0"
   },
   "changesets": [
-    "few-boats-share"
+    "few-boats-share",
+    "loud-toes-sip"
   ]
 }

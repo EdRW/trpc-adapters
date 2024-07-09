@@ -1,5 +1,11 @@
 # trpc-firebase-functions
 
+## 1.0.0-next.1
+
+### Patch Changes
+
+- fc6462a: add file allow-list to package.json
+
 ## 1.0.0-next.0
 
 ### Major Changes
