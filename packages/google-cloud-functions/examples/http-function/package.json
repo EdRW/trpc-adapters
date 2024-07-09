@@ -1,5 +1,6 @@
 {
   "name": "examples-http-function",
+  "version": "0.0.0",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "build": "tsc",
