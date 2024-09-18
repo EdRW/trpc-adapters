@@ -4,7 +4,7 @@
 
 ## Description
 
-This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a request handler for v1 and v2 HTTP `onRequest` Firebase functions.
+This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a request handler for v1 and v2 HTTP `onRequest` [Firebase functions](https://firebase.google.com/docs/functions).
 
 This package has the following peer dependencies:
 
