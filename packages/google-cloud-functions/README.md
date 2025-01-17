@@ -4,7 +4,7 @@
 
 ## Description
 
-This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a request handler for HTTP Google Cloud functions.
+This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a request handler for `HTTP` [Google Cloud functions](https://cloud.google.com/functions).
 
 This package has the following peer dependencies:
 
