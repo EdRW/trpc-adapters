@@ -14,7 +14,7 @@ This package has the following peer dependencies:
 Features
 
 - ✅ tRPC v10 support
-- 🚧 tRPC v11 support
+- 🚧 for tRPC v11 support, try using [`trpc-google-cloud-functions@next`](https://www.npmjs.com/package/trpc-google-cloud-functions/v/next)
 
 ## Installation
 
