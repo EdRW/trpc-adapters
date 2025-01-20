@@ -1,5 +1,11 @@
 # trpc-firebase-functions
 
+## 0.2.2
+
+### Patch Changes
+
+- Update documentation in README.md
+
 ## 0.2.1
 
 ### Patch Changes

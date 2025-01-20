@@ -1,6 +1,6 @@
 {
   "name": "trpc-firebase-functions",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "End-to-end type safety for your Firebase functions with tRPC.",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
