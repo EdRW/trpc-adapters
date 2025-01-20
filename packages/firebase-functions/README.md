@@ -24,19 +24,19 @@ Special thanks to the folks in the [Integration with firebase functions? #1263](
 npm
 
 ```bash
-npm install trpc-firebase-functions
+npm install trpc-firebase-functions@next
 ```
 
 Yarn
 
 ```bash
-yarn add trpc-firebase-functions
+yarn add trpc-firebase-functions@next
 ```
 
 pnpm
 
 ```bash
-pnpm add trpc-firebase-functions
+pnpm add trpc-firebase-functions@next
 ```
 
 ## Quickstart

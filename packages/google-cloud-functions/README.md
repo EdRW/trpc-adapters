@@ -21,19 +21,19 @@ Features
 npm
 
 ```bash
-npm install trpc-google-cloud-functions
+npm install trpc-google-cloud-functions@next
 ```
 
 Yarn
 
 ```bash
-yarn add trpc-google-cloud-functions
+yarn add trpc-google-cloud-functions@next
 ```
 
 pnpm
 
 ```bash
-pnpm add trpc-google-cloud-functions
+pnpm add trpc-google-cloud-functions@next
 ```
 
 ## Quickstart
