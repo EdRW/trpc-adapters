@@ -6,14 +6,12 @@ import type {
 import type { AnyRouter } from '@trpc/server';
 import type {
   NodeHTTPCreateContextFnOptions,
-  NodeHTTPRequestHandlerOptions,
+  NodeHTTPHandlerOptions,
 } from '@trpc/server/adapters/node-http';
 import { nodeHTTPRequestHandler } from '@trpc/server/adapters/node-http';
 
-export type CreateCloudFunctionHandlerOptions<TRouter extends AnyRouter> = Omit<
-  NodeHTTPRequestHandlerOptions<TRouter, Request, Response>,
-  'req' | 'res' | 'path'
->;
+export type CreateCloudFunctionHandlerOptions<TRouter extends AnyRouter> =
+  NodeHTTPHandlerOptions<TRouter, Request, Response>;
 
 export type CloudFunctionOnErrorFunction<TRouter extends AnyRouter> =
   CreateCloudFunctionHandlerOptions<TRouter>['onError'];
@@ -35,7 +33,8 @@ export function createCloudFunctionHandler<TRouter extends AnyRouter>(
     const endpoint = req.path.slice(1);
 
     await nodeHTTPRequestHandler({
-      ...opts,
+      // FIXME: no typecasting should be needed here
+      ...(opts as CreateCloudFunctionHandlerOptions<AnyRouter>),
       req,
       res,
       path: endpoint,

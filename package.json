@@ -12,14 +12,14 @@
     "publish-packages": "turbo run build lint && changeset version && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.7",
+    "@changesets/cli": "^2.27.11",
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
-    "prettier": "^3.3.2",
-    "turbo": "^2.0.6"
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3"
   },
   "packageManager": "pnpm@8.15.6",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   }
 }
