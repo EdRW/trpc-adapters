@@ -1,5 +1,11 @@
 # trpc-firebase-functions
 
+## 1.0.0-next.2
+
+### Minor Changes
+
+- 1506c4c: Update firebase-functions peer dependency to v6
+
 ## 1.0.0-next.1
 
 ### Patch Changes
