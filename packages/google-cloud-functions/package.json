@@ -1,6 +1,6 @@
 {
   "name": "trpc-google-cloud-functions",
-  "version": "1.0.0-next.0",
+  "version": "1.0.0-next.1",
   "description": "End-to-end type safety for your Google Cloud functions with tRPC.",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",

@@ -1,5 +1,11 @@
 # trpc-google-cloud-functions
 
+## 1.0.0-next.1
+
+### Patch Changes
+
+- 6608610: Update documentation in README.md
+
 ## 1.0.0-next.0
 
 ### Major Changes
