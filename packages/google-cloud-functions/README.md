@@ -13,8 +13,7 @@ This package has the following peer dependencies:
 
 Features
 
-- ✅ tRPC v10 support
-- 🚧 tRPC v11 support
+- ✅ tRPC v11 support
 
 ## Installation
 
