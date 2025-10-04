@@ -18,6 +18,18 @@
 
 - 89d8213: Upgrade to tRPC v11 peer dependency and drop support for firebase-functions v4. Only firebase-functions v5 is supported now.
 
+## 0.2.2
+
+### Patch Changes
+
+- Update documentation in README.md
+
+## 0.2.1
+
+### Patch Changes
+
+- 86489c4: add file allow-list to package.json
+
 ## 0.2.0
 
 ### Minor Changes
