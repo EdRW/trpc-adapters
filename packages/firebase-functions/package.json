@@ -43,14 +43,14 @@
     "!**/*.test.*"
   ],
   "peerDependencies": {
-    "@trpc/server": "^11.6.0",
+    "@trpc/server": "^11.0.0",
     "firebase-functions": "^6.0.0"
   },
   "devDependencies": {
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/jest-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
-    "@trpc/server": "^11.6.0",
+    "@trpc/server": "^11.0.0",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.7",
