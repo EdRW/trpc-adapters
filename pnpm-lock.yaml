@@ -66,8 +66,8 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       '@trpc/server':
-        specifier: ^11.0.0-rc.700
-        version: 11.0.0-rc.700(typescript@5.9.3)
+        specifier: ^11.6.0
+        version: 11.6.0(typescript@5.9.3)
       '@types/express':
         specifier: ^4.17.21
         version: 4.17.23
@@ -115,8 +115,8 @@ importers:
         specifier: workspace:*
         version: link:../../../typescript-config
       '@trpc/server':
-        specifier: 11.0.0-rc.700
-        version: 11.0.0-rc.700(typescript@5.9.3)
+        specifier: ^11.6.0
+        version: 11.6.0(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -158,8 +158,8 @@ importers:
         specifier: workspace:*
         version: link:../../../typescript-config
       '@trpc/server':
-        specifier: 11.0.0-rc.700
-        version: 11.0.0-rc.700(typescript@5.9.3)
+        specifier: ^11.6.0
+        version: 11.6.0(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -1119,6 +1119,11 @@ packages:
 
   '@trpc/server@11.0.0-rc.700':
     resolution: {integrity: sha512-EmbaGj76YcZWsnujZrrJEYa/2a6ZncTMm1he99RlemWE/ZsZbN+I+KCz+VKIsUr+JLaQmQMElcXs2x0qLI6T5g==}
+    peerDependencies:
+      typescript: '>=5.7.2'
+
+  '@trpc/server@11.6.0':
+    resolution: {integrity: sha512-skTso0AWbOZck40jwNeYv++AMZXNWLUWdyk+pB5iVaYmEKTuEeMoPrEudR12VafbEU6tZa8HK3QhBfTYYHDCdg==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -5443,6 +5448,10 @@ snapshots:
     optional: true
 
   '@trpc/server@11.0.0-rc.700(typescript@5.9.3)':
+    dependencies:
+      typescript: 5.9.3
+
+  '@trpc/server@11.6.0(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 
