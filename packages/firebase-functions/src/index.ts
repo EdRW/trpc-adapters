@@ -1,16 +1,14 @@
 import type { AnyRouter } from '@trpc/server';
 import type {
   NodeHTTPCreateContextFnOptions,
-  NodeHTTPRequestHandlerOptions,
+  NodeHTTPHandlerOptions,
 } from '@trpc/server/adapters/node-http';
 import { nodeHTTPRequestHandler } from '@trpc/server/adapters/node-http';
 import type express from 'express';
 import type { Request } from 'firebase-functions/v2/https';
 
-export type CreateFirebaseHandlerOptions<TRouter extends AnyRouter> = Omit<
-  NodeHTTPRequestHandlerOptions<TRouter, Request, express.Response>,
-  'req' | 'res' | 'path'
->;
+export type CreateFirebaseHandlerOptions<TRouter extends AnyRouter> =
+  NodeHTTPHandlerOptions<TRouter, Request, express.Response>;
 
 export type FirebaseOnErrorFunction<TRouter extends AnyRouter> =
   CreateFirebaseHandlerOptions<TRouter>['onError'];
@@ -32,7 +30,8 @@ export function createFirebaseHandler<TRouter extends AnyRouter>(
     const endpoint = req.path.slice(1);
 
     await nodeHTTPRequestHandler({
-      ...opts,
+      // FIXME: no typecasting should be needed here
+      ...(opts as CreateFirebaseHandlerOptions<AnyRouter>),
       req,
       res,
       path: endpoint,

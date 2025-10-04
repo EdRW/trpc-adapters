@@ -14,8 +14,7 @@ This package has the following peer dependencies:
 ### Features
 
 - ✅ `onRequest` Firebase functions support
-- ✅ tRPC v10 support
-- 🚧 for tRPC v11 support, try using [`trpc-firebase-functions@next`](https://www.npmjs.com/package/trpc-firebase-functions/v/next)
+- ✅ tRPC v11 support
 - 🤔 `onCall` Firebase functions support. If you need this, please consider opening and issue or a PR.
 
 Special thanks to the folks in the [Integration with firebase functions? #1263](https://github.com/trpc/trpc/discussions/1263) discussion thread for working out how a Firebase functions adapter could be built.
@@ -25,19 +24,19 @@ Special thanks to the folks in the [Integration with firebase functions? #1263](
 npm
 
 ```bash
-npm install trpc-firebase-functions
+npm install trpc-firebase-functions@next
 ```
 
 Yarn
 
 ```bash
-yarn add trpc-firebase-functions
+yarn add trpc-firebase-functions@next
 ```
 
 pnpm
 
 ```bash
-pnpm add trpc-firebase-functions
+pnpm add trpc-firebase-functions@next
 ```
 
 ## Quickstart

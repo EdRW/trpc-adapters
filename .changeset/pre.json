@@ -1,0 +1,21 @@
+{
+  "mode": "exit",
+  "tag": "next",
+  "initialVersions": {
+    "@trpc-adapters/eslint-config": "0.0.0",
+    "@trpc-adapters/jest-config": "0.0.0",
+    "@trpc-adapters/typescript-config": "0.0.0",
+    "examples-http-function": "0.0.0",
+    "examples-v2-https-function": "0.0.0",
+    "examples-v2-https-function-auth": "0.0.0",
+    "trpc-firebase-functions": "0.2.0",
+    "trpc-google-cloud-functions": "0.2.0"
+  },
+  "changesets": [
+    "few-boats-share",
+    "khaki-moons-dance",
+    "loud-toes-sip",
+    "moody-islands-travel",
+    "spotty-rings-give"
+  ]
+}

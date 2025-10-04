@@ -13,27 +13,26 @@ This package has the following peer dependencies:
 
 Features
 
-- ✅ tRPC v10 support
-- 🚧 for tRPC v11 support, try using [`trpc-google-cloud-functions@next`](https://www.npmjs.com/package/trpc-google-cloud-functions/v/next)
+- ✅ tRPC v11 support
 
 ## Installation
 
 npm
 
 ```bash
-npm install trpc-google-cloud-functions
+npm install trpc-google-cloud-functions@next
 ```
 
 Yarn
 
 ```bash
-yarn add trpc-google-cloud-functions
+yarn add trpc-google-cloud-functions@next
 ```
 
 pnpm
 
 ```bash
-pnpm add trpc-google-cloud-functions
+pnpm add trpc-google-cloud-functions@next
 ```
 
 ## Quickstart

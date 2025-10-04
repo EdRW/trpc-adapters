@@ -1,16 +1,16 @@
 # trpc-google-cloud-functions
 
-## 0.2.2
+## 1.0.0-next.1
 
 ### Patch Changes
 
-- Update documentation in README.md
+- 6608610: Update documentation in README.md
 
-## 0.2.1
+## 1.0.0-next.0
 
-### Patch Changes
+### Major Changes
 
-- 86489c4: add file allow-list to package.json
+- 1506c4c: Update @tRPC/server peer dependency to v11
 
 ## 0.2.0
 
