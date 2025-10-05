@@ -24,7 +24,9 @@
     "trpc",
     "adapter",
     "firebase",
-    "functions"
+    "firebase functions",
+    "functions",
+    "serverless"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
