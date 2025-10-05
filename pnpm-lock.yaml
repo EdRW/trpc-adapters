@@ -253,8 +253,11 @@ importers:
       '@google-cloud/functions-framework':
         specifier: ^3.4.5
         version: 3.5.1
+      '@trpc/server':
+        specifier: 'catalog:'
+        version: 11.6.0(typescript@5.9.3)
       zod:
-        specifier: ^3.24.1
+        specifier: 'catalog:'
         version: 3.25.76
     devDependencies:
       '@trpc-adapters/eslint-config':
@@ -263,9 +266,6 @@ importers:
       '@trpc-adapters/typescript-config':
         specifier: workspace:*
         version: link:../../../typescript-config
-      '@trpc/server':
-        specifier: 11.0.0-rc.700
-        version: 11.0.0-rc.700(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -1122,11 +1122,6 @@ packages:
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
-
-  '@trpc/server@11.0.0-rc.700':
-    resolution: {integrity: sha512-EmbaGj76YcZWsnujZrrJEYa/2a6ZncTMm1he99RlemWE/ZsZbN+I+KCz+VKIsUr+JLaQmQMElcXs2x0qLI6T5g==}
-    peerDependencies:
-      typescript: '>=5.7.2'
 
   '@trpc/server@11.6.0':
     resolution: {integrity: sha512-skTso0AWbOZck40jwNeYv++AMZXNWLUWdyk+pB5iVaYmEKTuEeMoPrEudR12VafbEU6tZa8HK3QhBfTYYHDCdg==}
@@ -5438,10 +5433,6 @@ snapshots:
 
   '@tootallnate/once@2.0.0':
     optional: true
-
-  '@trpc/server@11.0.0-rc.700(typescript@5.9.3)':
-    dependencies:
-      typescript: 5.9.3
 
   '@trpc/server@11.6.0(typescript@5.9.3)':
     dependencies:

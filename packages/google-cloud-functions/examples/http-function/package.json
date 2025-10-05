@@ -16,12 +16,12 @@
   "main": "lib/index.js",
   "dependencies": {
     "@google-cloud/functions-framework": "^3.4.5",
-    "zod": "^3.24.1"
+    "@trpc/server": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
-    "@trpc/server": "11.0.0-rc.700",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint": "^8.57.1",
