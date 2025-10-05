@@ -3,13 +3,6 @@ packages:
   - packages/*
   - packages/*/examples/*
 
-catalog:
-  '@google-cloud/functions-framework': ^4.0.0
-  '@trpc/server': ^11.6.0
-  firebase-admin: ^13.0.2
-  firebase-functions: ^6.4.0
-  zod: ^3.24.1
-
 catalogMode: strict
 
 onlyBuiltDependencies:
@@ -18,3 +11,52 @@ onlyBuiltDependencies:
   - pncat
   - protobufjs
   - unrs-resolver
+catalogs:
+  backend:
+    express: ^4.21.2
+  build:
+    tsup: ^8.3.5
+  cli:
+    '@changesets/cli': ^2.27.11
+    pncat: ^0.6.1
+  dev:
+    '@google-cloud/functions-framework': ^4.0.0
+    '@trpc/server': ^11.6.0
+    '@vercel/style-guide': ^5.2.0
+    firebase-functions: ^6.4.0
+    supertest: ^7.0.0
+  lint:
+    eslint: ^8.57.1
+    eslint-config-google: ^0.14.0
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-deprecation: ^3.0.0
+    eslint-plugin-import: ^2.31.0
+    eslint-plugin-only-warn: ^1.1.0
+    prettier: ^3.4.2
+  monorepo:
+    eslint-config-turbo: 2.3.3
+    turbo: ^2.3.3
+  peer:
+    '@google-cloud/functions-framework': ^4.0.0
+    '@trpc/server': ^11.0.0
+    firebase-functions: ^6.0.0
+  prod:
+    '@google-cloud/functions-framework': ^4.0.0
+    '@trpc/server': ^11.6.0
+    firebase-admin: ^13.0.2
+    firebase-functions: ^6.4.0
+  test:
+    jest: ^29.7.0
+    ts-jest: ^29.2.5
+  tsc:
+    typescript: ^5.7.3
+  types:
+    '@types/eslint': ^8.56.12
+    '@types/express': ^4.17.21
+    '@types/jest': ^29.5.14
+    '@types/node': ^22.10.7
+    '@types/supertest': ^6.0.2
+    '@typescript-eslint/eslint-plugin': ^7.18.0
+    '@typescript-eslint/parser': ^7.18.0
+  utils:
+    zod: ^3.24.1

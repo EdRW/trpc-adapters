@@ -15,21 +15,21 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@google-cloud/functions-framework": "^3.4.5",
-    "@trpc/server": "catalog:",
-    "zod": "catalog:"
+    "@google-cloud/functions-framework": "catalog:prod",
+    "@trpc/server": "catalog:prod",
+    "zod": "catalog:utils"
   },
   "devDependencies": {
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^8.57.1",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.31.0",
-    "firebase-functions": "^6.2.0",
+    "@typescript-eslint/eslint-plugin": "catalog:types",
+    "@typescript-eslint/parser": "catalog:types",
+    "eslint": "catalog:lint",
+    "eslint-config-google": "catalog:lint",
+    "eslint-plugin-import": "catalog:lint",
+    "firebase-functions": "catalog:dev",
     "trpc-google-cloud-functions": "workspace:*",
-    "typescript": "^5.7.3"
+    "typescript": "catalog:tsc"
   },
   "private": true
 }

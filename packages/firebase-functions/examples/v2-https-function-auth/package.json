@@ -16,21 +16,21 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@trpc/server": "catalog:",
-    "firebase-admin": "catalog:",
-    "firebase-functions": "catalog:",
+    "@trpc/server": "catalog:prod",
+    "firebase-admin": "catalog:prod",
+    "firebase-functions": "catalog:prod",
     "trpc-firebase-functions": "workspace:*",
-    "zod": "catalog:"
+    "zod": "catalog:utils"
   },
   "devDependencies": {
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^8.57.1",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-import": "^2.31.0",
-    "typescript": "^5.7.3"
+    "@typescript-eslint/eslint-plugin": "catalog:types",
+    "@typescript-eslint/parser": "catalog:types",
+    "eslint": "catalog:lint",
+    "eslint-config-google": "catalog:lint",
+    "eslint-plugin-import": "catalog:lint",
+    "typescript": "catalog:tsc"
   },
   "private": true
 }
