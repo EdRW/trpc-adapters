@@ -206,8 +206,8 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       '@trpc/server':
-        specifier: ^11.0.0-rc.700
-        version: 11.0.0-rc.700(typescript@5.9.3)
+        specifier: ^11.0.0
+        version: 11.6.0(typescript@5.9.3)
       '@types/express':
         specifier: ^5.0.0
         version: 5.0.3
