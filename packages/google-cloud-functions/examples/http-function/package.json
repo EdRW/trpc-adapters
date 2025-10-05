@@ -17,6 +17,7 @@
   "dependencies": {
     "@google-cloud/functions-framework": "catalog:prod",
     "@trpc/server": "catalog:prod",
+    "trpc-google-cloud-functions": "workspace:*",
     "zod": "catalog:utils"
   },
   "devDependencies": {
@@ -28,7 +29,6 @@
     "eslint-config-google": "catalog:lint",
     "eslint-plugin-import": "catalog:lint",
     "firebase-functions": "catalog:dev",
-    "trpc-google-cloud-functions": "workspace:*",
     "typescript": "catalog:tsc"
   },
   "private": true

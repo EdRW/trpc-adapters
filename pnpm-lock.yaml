@@ -356,6 +356,9 @@ importers:
       '@trpc/server':
         specifier: catalog:prod
         version: 11.6.0(typescript@5.9.3)
+      trpc-google-cloud-functions:
+        specifier: workspace:*
+        version: link:../..
       zod:
         specifier: catalog:utils
         version: 3.25.76
@@ -384,9 +387,6 @@ importers:
       firebase-functions:
         specifier: catalog:dev
         version: 6.4.0(firebase-admin@13.5.0)
-      trpc-google-cloud-functions:
-        specifier: workspace:*
-        version: link:../..
       typescript:
         specifier: catalog:tsc
         version: 5.9.3
