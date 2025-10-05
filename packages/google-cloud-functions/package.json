@@ -46,11 +46,11 @@
     "!**/*.test.*"
   ],
   "peerDependencies": {
-    "@google-cloud/functions-framework": "^3.0.0",
+    "@google-cloud/functions-framework": "^4.0.0",
     "@trpc/server": "^11.0.0"
   },
   "devDependencies": {
-    "@google-cloud/functions-framework": "^3.0.0",
+    "@google-cloud/functions-framework": "catalog:",
     "@trpc-adapters/eslint-config": "workspace:*",
     "@trpc-adapters/jest-config": "workspace:*",
     "@trpc-adapters/typescript-config": "workspace:*",
