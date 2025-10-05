@@ -28,7 +28,6 @@
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-import": "^2.31.0",
     "firebase-functions": "^6.2.0",
-    "firebase-functions-test": "^3.4.0",
     "trpc-google-cloud-functions": "workspace:*",
     "typescript": "^5.7.3"
   },
