@@ -11,7 +11,7 @@ This package has the following peer dependencies:
 - `@trpc/server`
 - `@google-cloud/functions-framework`
 
-Features
+### Features
 
 - ✅ tRPC v11 support
 

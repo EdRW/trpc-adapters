@@ -15,7 +15,7 @@ This package has the following peer dependencies:
 
 - ✅ `onRequest` Firebase functions support
 - ✅ tRPC v11 support
-- 🤔 `onCall` Firebase functions support. If you need this, please consider opening and issue or a PR.
+- 🤔 `onCall` Firebase functions support. If you need this, please consider opening an issue or a PR.
 
 Special thanks to the folks in the [Integration with firebase functions? #1263](https://github.com/trpc/trpc/discussions/1263) discussion thread for working out how a Firebase functions adapter could be built.
 
