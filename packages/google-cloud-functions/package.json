@@ -49,8 +49,8 @@
     "!**/*.test.*"
   ],
   "peerDependencies": {
-    "@google-cloud/functions-framework": "catalog:peer",
-    "@trpc/server": "catalog:peer"
+    "@google-cloud/functions-framework": "^4.0.0",
+    "@trpc/server": "^11.0.0"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "catalog:dev",

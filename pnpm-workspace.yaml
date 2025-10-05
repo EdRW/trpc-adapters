@@ -36,10 +36,6 @@ catalogs:
   monorepo:
     eslint-config-turbo: 2.3.3
     turbo: ^2.3.3
-  peer:
-    '@google-cloud/functions-framework': ^4.0.0
-    '@trpc/server': ^11.0.0
-    firebase-functions: ^6.0.0
   prod:
     '@google-cloud/functions-framework': ^4.0.0
     '@trpc/server': ^11.6.0
