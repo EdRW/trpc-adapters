@@ -8,8 +8,8 @@ This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a reques
 
 This package has the following peer dependencies:
 
-- `@trpc/server`
-- `@google-cloud/functions-framework`
+- `@trpc/server` ^11.0.0
+- `@google-cloud/functions-framework` ^4.0.0
 
 ### Features
 

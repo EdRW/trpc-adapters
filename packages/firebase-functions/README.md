@@ -8,8 +8,8 @@ This adapter allows you to plug in a [tRPC](https://trpc.io/) router as a reques
 
 This package has the following peer dependencies:
 
-- `@trpc/server`
-- `firebase-functions`
+- `@trpc/server` ^11.0.0
+- `firebase-functions` ^6.0.0
 
 ### Features
 
