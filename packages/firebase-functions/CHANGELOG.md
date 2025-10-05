@@ -1,5 +1,20 @@
 # trpc-firebase-functions
 
+## 1.0.0
+
+### Major Changes
+
+- Update @tRPC/server peer dependency to v11
+- Update firebase-functions peer dependency to v6
+
+### Minor Changes
+
+- 1506c4c: Update firebase-functions peer dependency to v6
+
+### Patch Changes
+
+- fc6462a: add file allow-list to package.json
+
 ## 1.0.0-next.2
 
 ### Minor Changes

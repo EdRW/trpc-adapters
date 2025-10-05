@@ -1,5 +1,16 @@
 # trpc-google-cloud-functions
 
+## 1.0.0
+
+### Major Changes
+
+- Update @tRPC/server peer dependency to v11
+- Update @google-cloud/functions-framework peer dependency to v4
+
+### Patch Changes
+
+- 6608610: Update documentation in README.md
+
 ## 1.0.0-next.1
 
 ### Patch Changes
