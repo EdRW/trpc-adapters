@@ -4,6 +4,21 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@trpc/server':
+      specifier: ^11.6.0
+      version: 11.6.0
+    firebase-admin:
+      specifier: ^13.0.2
+      version: 13.5.0
+    firebase-functions:
+      specifier: ^6.4.0
+      version: 6.4.0
+    zod:
+      specifier: ^3.24.1
+      version: 3.25.76
+
 importers:
 
   .:
@@ -66,7 +81,7 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       '@trpc/server':
-        specifier: ^11.0.0
+        specifier: 'catalog:'
         version: 11.6.0(typescript@5.9.3)
       '@types/express':
         specifier: ^4.17.21
@@ -84,7 +99,7 @@ importers:
         specifier: ^4.21.2
         version: 4.21.2
       firebase-functions:
-        specifier: ^6.0.0
+        specifier: 'catalog:'
         version: 6.4.0(firebase-admin@13.5.0)
       jest:
         specifier: ^29.7.0
@@ -104,8 +119,17 @@ importers:
 
   packages/firebase-functions/examples/v2-https-function:
     dependencies:
+      '@trpc/server':
+        specifier: 'catalog:'
+        version: 11.6.0(typescript@5.9.3)
+      firebase-functions:
+        specifier: 'catalog:'
+        version: 6.4.0(firebase-admin@13.5.0)
+      trpc-firebase-functions:
+        specifier: workspace:*
+        version: link:../..
       zod:
-        specifier: ^3.24.1
+        specifier: 'catalog:'
         version: 3.25.76
     devDependencies:
       '@trpc-adapters/eslint-config':
@@ -114,9 +138,6 @@ importers:
       '@trpc-adapters/typescript-config':
         specifier: workspace:*
         version: link:../../../typescript-config
-      '@trpc/server':
-        specifier: ^11.0.0
-        version: 11.6.0(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -132,23 +153,29 @@ importers:
       eslint-plugin-import:
         specifier: ^2.31.0
         version: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)
-      firebase-functions:
-        specifier: ^6.2.0
-        version: 6.4.0(firebase-admin@13.5.0)
       firebase-functions-test:
         specifier: ^3.4.0
         version: 3.4.1(firebase-admin@13.5.0)(firebase-functions@6.4.0(firebase-admin@13.5.0))(jest@29.7.0(@types/node@22.18.8))
-      trpc-firebase-functions:
-        specifier: workspace:*
-        version: link:../..
       typescript:
         specifier: ^5.7.3
         version: 5.9.3
 
   packages/firebase-functions/examples/v2-https-function-auth:
     dependencies:
+      '@trpc/server':
+        specifier: 'catalog:'
+        version: 11.6.0(typescript@5.9.3)
+      firebase-admin:
+        specifier: 'catalog:'
+        version: 13.5.0
+      firebase-functions:
+        specifier: 'catalog:'
+        version: 6.4.0(firebase-admin@13.5.0)
+      trpc-firebase-functions:
+        specifier: workspace:*
+        version: link:../..
       zod:
-        specifier: ^3.24.1
+        specifier: 'catalog:'
         version: 3.25.76
     devDependencies:
       '@trpc-adapters/eslint-config':
@@ -157,9 +184,6 @@ importers:
       '@trpc-adapters/typescript-config':
         specifier: workspace:*
         version: link:../../../typescript-config
-      '@trpc/server':
-        specifier: ^11.0.0
-        version: 11.6.0(typescript@5.9.3)
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)(typescript@5.9.3)
@@ -175,18 +199,9 @@ importers:
       eslint-plugin-import:
         specifier: ^2.31.0
         version: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@5.9.3))(eslint@8.57.1)
-      firebase-admin:
-        specifier: ^13.0.2
-        version: 13.5.0
-      firebase-functions:
-        specifier: ^6.2.0
-        version: 6.4.0(firebase-admin@13.5.0)
       firebase-functions-test:
         specifier: ^3.4.0
         version: 3.4.1(firebase-admin@13.5.0)(firebase-functions@6.4.0(firebase-admin@13.5.0))(jest@29.7.0(@types/node@22.18.8))
-      trpc-firebase-functions:
-        specifier: workspace:*
-        version: link:../..
       typescript:
         specifier: ^5.7.3
         version: 5.9.3
@@ -206,7 +221,7 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       '@trpc/server':
-        specifier: ^11.0.0
+        specifier: 'catalog:'
         version: 11.6.0(typescript@5.9.3)
       '@types/express':
         specifier: ^5.0.0

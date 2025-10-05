@@ -30,8 +30,7 @@
     "firebase-functions": "^6.2.0",
     "firebase-functions-test": "^3.4.0",
     "trpc-google-cloud-functions": "workspace:*",
-    "typescript": "^5.7.3",
-    "zod": "^3.23.8"
+    "typescript": "^5.7.3"
   },
   "private": true
 }
