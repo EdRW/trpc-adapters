@@ -15,5 +15,6 @@ catalogMode: strict
 onlyBuiltDependencies:
   - '@firebase/util'
   - esbuild
+  - pncat
   - protobufjs
   - unrs-resolver
